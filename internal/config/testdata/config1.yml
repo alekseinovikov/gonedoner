@@ -1,0 +1,13 @@
+version: '0.0.1'
+
+services:
+  ping:
+    command: "ping"
+    args:
+      - "google.com"
+    env:
+      ENV: production
+      DEBUG: false
+
+  pong:
+    command: "pong"
